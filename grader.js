@@ -38,7 +38,7 @@ var assertFileExists = function(infile) {
 };
 
 var checkArgsConsistent = function(htmlfile, url) {
-    if (url.length > 0 && htmlfile != HTMLFILE_DEFAULT) {
+    if (url && url.length > 0 && htmlfile != HTMLFILE_DEFAULT) {
 	console.log("ERROR");
 	return false;
     }
