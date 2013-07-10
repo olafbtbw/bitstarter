@@ -44,7 +44,6 @@ var buildfn = function(checksfile) {
 	    console.log('Error: ' + util.format(result.message));
 	} 
 	else {
-	    console.log("Wrote %s", DLHTMLFILE_DEFAULT);
 	    fs.writeFileSync(DLHTMLFILE_DEFAULT, result);
 	    checkHtmlFile(DLHTMLFILE_DEFAULT, checksfile);
 	}
